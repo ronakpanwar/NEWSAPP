@@ -23,7 +23,7 @@ export default class App extends Component {
     this.setState({
       progress:progress
     })
-    //console.log("hi")
+    
   }
 
 
