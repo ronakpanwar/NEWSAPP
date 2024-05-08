@@ -28,7 +28,7 @@ const App = ()=> {
 
 
     return (
-      <Main>
+      <Main basename='/newsapp'>
         <div>
 
           <Navbar />
@@ -40,7 +40,7 @@ const App = ()=> {
           />
          
           <Routes>
-            <Route exact path='/*' element={<News setProgress= {setProgress} pageSize={6} country={'in'} category={'general'} />} />
+            <Route exact path='/newsapp' element={<News setProgress= {setProgress} pageSize={6} country={'in'} category={'general'} />} />
             <Route exact path='/business' element={<News setProgress= {setProgress} pageSize={6} country={'in'} category={'business'} />} />
             <Route exact path='/entertainment' element={<News setProgress= {setProgress} pageSize={6} country={'in'} category={'entertainment'} />} />
             <Route exact path='/health' element={<News setProgress= {setProgress} pageSize={6} country={'in'} category={'health'} />} />
